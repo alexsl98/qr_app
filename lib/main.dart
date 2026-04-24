@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:qr_scanner_app/src/pages/qr_page.dart';
+import 'package:qr_scanner_app/src/presentation/pages/scan_code_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,11 +13,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        colorScheme: .fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
       ),
       initialRoute: '/',
       routes: {
-        '/': (context) => const QRPage(),
+        '/': (context) => ScanCodePage(),
       },
     );
   }
